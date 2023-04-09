@@ -32,6 +32,7 @@ try {
 }
 
 const wss : ws.Server = new ws.Server({
+  host: '127.0.0.1',
   port: serverPort,
   perMessageDeflate: false
 }, () => {
